@@ -1,0 +1,2 @@
+-f "bestvideo+bestaudio" --recode-video mp4 --embed-metadata --restrict-filenames --progress -o
+'~/Downloads/yt-dlp/%(title)s-%(id)s.%(ext)s'
