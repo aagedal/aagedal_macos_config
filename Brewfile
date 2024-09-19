@@ -8,6 +8,7 @@ brew "wget"
 brew "yt-dlp"
 brew "yabai"
 brew "skhd"
+brew "mas"
 
 cask "1password"
 cask "arc"
