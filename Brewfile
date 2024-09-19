@@ -37,6 +37,12 @@ cask "xcode"
 ## Mediainfo – Pro Licence
 ## Final Cut Pro
 ## Affinity Photo
+## Ulysses - Subscription
+## Infuse player – Subscription
+## Mountain Duck - Purchased
+## Keynote
+## Numbers
+
 
 
 # Adobe Creative Cloud
