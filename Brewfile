@@ -6,6 +6,8 @@ brew "ffmpeg"
 brew "exiftool"
 brew "wget"
 brew "yt-dlp"
+brew "yabai"
+brew "skhd"
 
 cask "1password"
 cask "arc"
