@@ -16,21 +16,30 @@ cask "fantastical"
 cask "hiddenbar"
 cask "hyperkey"
 cask "keka"
+cask "shutter-encoder"
+cask "iina"
 cask "messenger"
 cask "microsoft-teams"
 cask "obs"
-cask "ollama"
-cask "onedrive"
-cask "popclip"
 cask "raycast"
 cask "slack"
 cask "visual-studio-code"
-cask "vlc"
 cask "warp"
-cask "xcode"
 cask "zed"
-cask davinci-resolve-studio
+cask "davinci-resolve-studio"
+cask "msty"
+cask "xcode"
+
 
 # Mac App Store Apps
-# Elmedia Player - Pro licence bought
-# Mediainfo – Pro Licence
+## Elmedia Player - Pro licence bought
+## Mediainfo – Pro Licence
+## Final Cut Pro
+## Affinity Photo
+
+
+# Adobe Creative Cloud
+## Adobe Bridge
+## Lightroom
+## Photoshop
+## Premiere Pro
