@@ -1,5 +1,6 @@
 # Aagedals default apps
 
+# Activate Homebrew Cask Repository for GUI apps.
 tap "homebrew/cask"
 
 # Command Line Apps
