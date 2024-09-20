@@ -2,6 +2,7 @@
 
 tap "homebrew/cask"
 
+# Command Line Apps
 brew "ffmpeg"
 brew "exiftool"
 brew "wget"
@@ -10,6 +11,7 @@ brew "yabai"
 brew "skhd"
 brew "mas"
 
+# GUI Apps
 cask "1password"
 cask "arc"
 cask "chatgpt"
@@ -34,15 +36,30 @@ cask "xcode"
 
 
 # Mac App Store Apps
-## Elmedia Player - Pro licence bought
-## Mediainfo – Pro Licence
-## Final Cut Pro
-## Affinity Photo
-## Ulysses - Subscription
-## Infuse player – Subscription
-## Mountain Duck - Purchased
-## Keynote
-## Numbers
+mas "Affinity Designer 2", id: 1616831348
+mas "Affinity Photo 2", id: 1616822987
+mas "Affinity Publisher 2", id: 1606941598
+mas "Apple Configurator", id: 1037126344
+mas "Charmstone", id: 1563735522
+mas "Elmedia Video Player", id: 1044549675
+mas "Fantastical", id: 975937182
+mas "Final Cut Pro", id: 424389933
+mas "Hidden Bar", id: 1452453066
+mas "Infuse", id: 1136220934
+mas "Keka", id: 470158793
+mas "Keynote", id: 409183694
+mas "Logic Pro", id: 634148309
+mas "MediaInfo", id: 510620098
+mas "Messenger", id: 1480068668
+mas "Microsoft PowerPoint", id: 462062816
+mas "Motion", id: 434290957
+mas "Mountain Duck", id: 1024974133
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Playgrounds", id: 1496833156
+mas "PopClip", id: 445189367
+mas "Ulysses", id: 1225570693
+mas "Xcode", id: 497799835
 
 
 
