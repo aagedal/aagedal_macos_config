@@ -24,7 +24,6 @@ cask "hyperkey"
 cask "keka"
 cask "shutter-encoder"
 cask "iina"
-cask "messenger"
 cask "obs"
 cask "raycast"
 cask "slack"
@@ -59,6 +58,7 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "PopClip", id: 445189367
 mas "Ulysses", id: 1225570693
+mas "Messenger", id: 1480068668
 
 
 
