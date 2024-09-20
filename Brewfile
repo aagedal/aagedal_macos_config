@@ -1,7 +1,7 @@
 # Aagedals default apps
 
 # Activate Homebrew Cask Repository for GUI apps and Kekeishia rep for yabai and skhd.
-tap "homebrew/cask
+tap "homebrew/cask"
 tap "homebrew/bundle"
 tap "koekeishiya/formulae"
 
