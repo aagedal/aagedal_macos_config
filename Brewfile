@@ -62,3 +62,6 @@ mas "Ulysses", id: 1225570693
 ## Lightroom
 ## Photoshop
 ## Premiere Pro
+
+# Other
+## Photo Mechanic
