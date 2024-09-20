@@ -31,7 +31,6 @@ cask "slack"
 cask "visual-studio-code"
 cask "warp"
 cask "zed"
-cask "davinci-resolve-studio"
 cask "msty"
 cask "xcode"
 cask "microsoft-powerpoint"
@@ -71,3 +70,4 @@ mas "Ulysses", id: 1225570693
 
 # Other
 ## Photo Mechanic
+## DaVinci Resolve Studio
