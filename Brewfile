@@ -1,15 +1,17 @@
 # Aagedals default apps
 
-# Activate Homebrew Cask Repository for GUI apps.
-tap "homebrew/cask"
+# Activate Homebrew Cask Repository for GUI apps and Kekeishia rep for yabai and skhd.
+tap "homebrew/cask
+tap "homebrew/bundle"
+tap "koekeishiya/formulae"
 
 # Command Line Apps
 brew "ffmpeg"
 brew "exiftool"
 brew "wget"
 brew "yt-dlp"
-brew "yabai"
-brew "skhd"
+brew "koekeishiya/formulae/skhd"
+brew "koekeishiya/formulae/yabai"
 brew "mas"
 
 # GUI Apps
