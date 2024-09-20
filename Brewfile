@@ -25,7 +25,6 @@ cask "keka"
 cask "shutter-encoder"
 cask "iina"
 cask "messenger"
-cask "microsoft-teams"
 cask "obs"
 cask "raycast"
 cask "slack"
@@ -35,6 +34,12 @@ cask "zed"
 cask "davinci-resolve-studio"
 cask "msty"
 cask "xcode"
+cask "microsoft-powerpoint"
+cask "microsoft-excel"
+cask "microsoft-word"
+cask "microsoft-teams"
+cask "microsoft-outlook"
+
 
 
 # Mac App Store Apps
