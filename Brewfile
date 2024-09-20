@@ -19,7 +19,6 @@ cask "1password"
 cask "arc"
 cask "chatgpt"
 cask "discord"
-cask "fantastical"
 cask "hiddenbar"
 cask "hyperkey"
 cask "keka"
@@ -44,7 +43,6 @@ mas "Affinity Photo 2", id: 1616822987
 mas "Affinity Publisher 2", id: 1606941598
 mas "Charmstone", id: 1563735522
 mas "Elmedia Video Player", id: 1044549675
-mas "Fantastical", id: 975937182
 mas "Final Cut Pro", id: 424389933
 mas "Hidden Bar", id: 1452453066
 mas "Infuse", id: 1136220934
