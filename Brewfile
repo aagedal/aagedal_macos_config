@@ -37,6 +37,7 @@ cask "microsoft-excel"
 cask "microsoft-word"
 cask "microsoft-teams"
 cask "microsoft-outlook"
+cask "docker"
 
 
 
