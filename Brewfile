@@ -38,6 +38,7 @@ cask "microsoft-word"
 cask "microsoft-teams"
 cask "microsoft-outlook"
 cask "docker"
+cask "adobe-dng-converter"
 
 
 
