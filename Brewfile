@@ -13,6 +13,10 @@ brew "yt-dlp" # Download all web videos
 brew "koekeishiya/formulae/skhd" # Works in tandem with yabai below. Creating system wide keyboard shortcuts with CLI programs.
 brew "koekeishiya/formulae/yabai" # Tiled Window manager for macOS. Automatically tile windows.
 brew "mas" # Application to install apps from the App Store using CLI
+brew "btop" # Better terminal activity monitor
+brew "ranger" # Terminal file manager
+brew "speedtest-cli" # Terminal speed test
+brew "lsd" # Better ls command. With icons.
 
 # GUI Apps
 cask "1password" # The best password manager. Require a subscription.
