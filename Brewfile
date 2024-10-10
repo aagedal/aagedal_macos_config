@@ -44,11 +44,6 @@ cask "warp" # Terminal application with text-like editing and AI auto-complete
 cask "zed" # Programming application like VSCode, but written in Rust.
 cask "msty" # Local and cloud LMM GUI
 cask "xcode" # Swift UI programming
-cask "microsoft-powerpoint" # TV 2 account
-cask "microsoft-excel" # TV 2 account
-cask "microsoft-word" # TV 2 account
-cask "microsoft-teams" # TV 2 account
-cask "microsoft-outlook" # TV 2 account
 cask "docker" # Run Docker-images. Label Studio for example.
 cask "adobe-dng-converter" # Tool to convert RAW files to DNG
 cask "shottr" # Screenshotting tool – Licence in 1Password
@@ -73,6 +68,11 @@ mas "Pages", id: 409201541 # Word alternative.
 mas "PopClip", id: 445189367 # Smart popup commands with text selection.
 mas "Ulysses", id: 1225570693 # Minimalist writing tool for novels.
 mas "Messenger", id: 1480068668 # Facebook messenger app.
+mas "Microsoft Teams", id: 1091189122 # Video meetings.
+mas "Microsoft Word", id: 462054704 # Writing app.
+mas "Microsoft Excel", id: 462058435 # Spreadcheat app.
+mas "Microsoft PowerPoint", id: 462062816 # Presentations.
+mas "Microsoft Outlook", id: 985367838 # Mail and meeting calendar.
 
 
 
