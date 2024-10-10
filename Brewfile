@@ -4,8 +4,11 @@
 tap "homebrew/cask" # Enabling installation of GUI apps with Homebrew.
 tap "homebrew/bundle" # Needed for automated reinstall with MAS
 tap "koekeishiya/formulae" # Needed for Yabai and skhd
+tap "romkatv/powerlevel10k"
 
 # Command Line Apps
+brew "git" # Working with code and GitHub
+brew "zsh"
 brew "ffmpeg" # Convert almost all video formats in existence.
 brew "exiftool" # Read or write ALL metadata from image files.
 brew "wget" # Quickly download a file without a web browser
@@ -17,6 +20,12 @@ brew "btop" # Better terminal activity monitor
 brew "ranger" # Terminal file manager
 brew "speedtest-cli" # Terminal speed test
 brew "lsd" # Better ls command. With icons.
+brew "zsh-syntax-highlighting"
+brew "zsh-autosuggestions"
+brew "powerlevel10k"
+
+# Install fonts for powerlevel10k (optional)
+cask "font-hack-nerd-font" # Example font
 
 # GUI Apps
 cask "1password" # The best password manager. Require a subscription.
@@ -43,7 +52,7 @@ cask "microsoft-outlook" # TV 2 account
 cask "docker" # Run Docker-images. Label Studio for example.
 cask "adobe-dng-converter" # Tool to convert RAW files to DNG
 cask "shottr" # Screenshotting tool – Licence in 1Password
-
+cask "stats" # Menu bar activity monitor
 
 
 # Mac App Store Apps
@@ -73,6 +82,6 @@ mas "Messenger", id: 1480068668 # Facebook messenger app.
 ## Photoshop
 ## Premiere Pro
 
-# Other
+# Other apps that need manual installation
 ## Photo Mechanic
-## DaVinci Resolve Studio
+## DaVinci Resolve Studio – Can be automated via mas, but for python scripting it's best getting directly from Blackmagic Design.
