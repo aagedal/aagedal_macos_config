@@ -12,6 +12,9 @@ brew "zsh"
 brew "ffmpeg" # Convert almost all video formats in existence.
 brew "exiftool" # Read or write ALL metadata from image files.
 brew "wget" # Quickly download a file without a web browser
+brew "exa" # Better ls
+brew "oxide" # Better cd
+brew "tmux" # Terminal management
 brew "yt-dlp" # Download all web videos
 brew "koekeishiya/formulae/skhd" # Works in tandem with yabai below. Creating system wide keyboard shortcuts with CLI programs.
 brew "koekeishiya/formulae/yabai" # Tiled Window manager for macOS. Automatically tile windows.
@@ -48,6 +51,7 @@ cask "docker" # Run Docker-images. Label Studio for example.
 cask "adobe-dng-converter" # Tool to convert RAW files to DNG
 cask "shottr" # Screenshotting tool – Licence in 1Password
 cask "stats" # Menu bar activity monitor
+cask "wezterm" # Better terminal than default. More private than Warp
 
 
 # Mac App Store Apps
