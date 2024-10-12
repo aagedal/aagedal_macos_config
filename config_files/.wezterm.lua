@@ -12,7 +12,11 @@ config.automatically_reload_config = true
 config.font = wezterm.font("MesloLGS Nerd Font Mono")
 config.font_size = 18
 
-config.enable_tab_bar = false
+-- Tabs
+config.enable_tab_bar = true
+config.hide_tab_bar_if_only_one_tab = true
+config.show_new_tab_button_in_tab_bar = false
+
 
 config.window_decorations = "RESIZE"
 config.window_background_opacity = 0.8
@@ -37,6 +41,30 @@ config.colors = {
 	selection_fg = "#CBE0F0",
 	ansi = { "#214969", "#E52E2E", "#44FFB1", "#FFE073", "#0FC5ED", "#a277ff", "#24EAF7", "#24EAF7" },
 	brights = { "#214969", "#E52E2E", "#44FFB1", "#FFE073", "#A277FF", "#a277ff", "#24EAF7", "#24EAF7" },
+	tab_bar = {
+        -- Set the background to be fully transparent
+        background = "rgba(0, 0, 0, 0)",
+
+        -- Active tab styling
+        active_tab = {
+            bg_color = "#44FFB1",      -- Background color for active tab
+            fg_color = "#011423",      -- Foreground (text) color for active tab
+            intensity = "Bold",        -- Make the text bold
+            underline = "Single",      -- Underline the active tab
+        },
+
+        -- Inactive tab styling
+        inactive_tab = {
+            bg_color = "rgba(33, 73, 105, 0.5)",  -- Semi-transparent background for inactive tabs
+            fg_color = "#CBE0F0",                -- Foreground (text) color for inactive tabs
+        },
+
+        -- Inactive tab when hovered
+        inactive_tab_hover = {
+            bg_color = "rgba(15, 197, 237, 0.7)", -- Semi-transparent background when hovering over inactive tab
+            fg_color = "#011423",                -- Foreground (text) color when hovering
+        },
+    },
 }
 
 -- and finally, return the configuration to wezterm
