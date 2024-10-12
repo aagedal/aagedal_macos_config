@@ -4,7 +4,7 @@
 tap "homebrew/cask" # Enabling installation of GUI apps with Homebrew.
 tap "homebrew/bundle" # Needed for automated reinstall with MAS
 tap "koekeishiya/formulae" # Needed for Yabai and skhd
-tap "romkatv/powerlevel10k"
+tap "romkatv/powerlevel10k" # Terminal theme repo
 
 # Command Line Apps
 brew "git" # Working with code and GitHub
@@ -20,9 +20,9 @@ brew "btop" # Better terminal activity monitor
 brew "ranger" # Terminal file manager
 brew "speedtest-cli" # Terminal speed test
 brew "lsd" # Better ls command. With icons.
-brew "zsh-syntax-highlighting"
-brew "zsh-autosuggestions"
-brew "powerlevel10k"
+brew "zsh-syntax-highlighting" # Terminal syntax highlight
+brew "zsh-autosuggestions" # Terminal auto complete
+brew "powerlevel10k" # Terminal theme
 
 # Install fonts for powerlevel10k (optional)
 cask "font-hack-nerd-font" # Example font
