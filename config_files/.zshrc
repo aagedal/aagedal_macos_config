@@ -1,4 +1,11 @@
 
+# Load Powerlevel10k theme
+source $(brew --prefix powerlevel10k)/share/powerlevel10k/powerlevel10k.zsh-theme
+
+# Load your Powerlevel10k configuration if it exists
+[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+
+
 # Enable Oh My Zsh plugins
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 
@@ -7,12 +14,6 @@ source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.z
 
 # Enable autosuggestions
 source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
-
-# Customize the prompt (optional)
-# Uncomment the following lines if using powerlevel10k theme
-# ZSH_THEME="powerlevel10k/powerlevel10k"
-# source "$(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme"
-
 
 # ---- Eza (better ls) -----
 
