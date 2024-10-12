@@ -1,10 +1,3 @@
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
-
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, you can set it to "powerlevel10k/powerlevel10k" if using powerlevel10k.
-ZSH_THEME="robbyrussell"
 
 # Enable Oh My Zsh plugins
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
@@ -20,8 +13,12 @@ source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 # ZSH_THEME="powerlevel10k/powerlevel10k"
 # source "$(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme"
 
+
+# ---- Eza (better ls) -----
+
+alias ls="eza -la --no-permissions --no-user --header --group-directories-last --icons=always"
+
 # Aliases
-alias ll='lsd -lah'
 alias gs='git status'
 alias gp='git push'
 alias gl='git pull'

@@ -10,7 +10,7 @@ config.automatically_reload_config = true
 -- This is where you actually apply your config choices
 
 config.font = wezterm.font("MesloLGS Nerd Font Mono")
-config.font_size = 19
+config.font_size = 18
 
 config.enable_tab_bar = false
 
