@@ -12,7 +12,7 @@ brew "zsh"
 brew "ffmpeg" # Convert almost all video formats in existence.
 brew "exiftool" # Read or write ALL metadata from image files.
 brew "wget" # Quickly download a file without a web browser
-brew "exa" # Better ls
+brew "eza" # Better ls
 brew "oxide" # Better cd
 brew "tmux" # Terminal management
 brew "yt-dlp" # Download all web videos
@@ -43,7 +43,6 @@ cask "obs" # Screenrecording tool with audio meters and custom PiP
 cask "raycast" # Fast app launching, clipboard history, window management, AI quick-fixes
 cask "slack" # Business communication
 cask "visual-studio-code" # Fast free code editor
-cask "warp" # Terminal application with text-like editing and AI auto-complete
 cask "zed" # Programming application like VSCode, but written in Rust.
 cask "msty" # Local and cloud LMM GUI
 cask "xcode" # Swift UI programming

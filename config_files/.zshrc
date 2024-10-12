@@ -9,9 +9,6 @@ ZSH_THEME="robbyrussell"
 # Enable Oh My Zsh plugins
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 
-# Load Oh My Zsh
-source $ZSH/oh-my-zsh.sh
-
 # Enable syntax highlighting
 source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
