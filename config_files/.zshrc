@@ -22,6 +22,7 @@ alias ls="eza -la --no-permissions --no-user --header --group-directories-last -
 alias gs='git status'
 alias gp='git push'
 alias gl='git pull'
+alias c='clear'
 
 # Environment Variables
 export EDITOR='nano'
