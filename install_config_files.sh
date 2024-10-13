@@ -1,23 +1,40 @@
 #!/bin/bash
 
 # Define variables
-REPO_URL="https://github.com/aagedal/aagedal_macos_config.git"
+REPO_URL="https://github.com/aagedal/aagedal_macos_config"
+CONFIG_DIR="config_files"
 TEMP_DIR=$(mktemp -d)
 TARGET_DIR="${HOME}"
 
-# Clone the repository
-echo "Cloning repository..."
-git clone "$REPO_URL" "$TEMP_DIR"
+# Download and extract config_files directory
+echo "Downloading configuration files..."
+curl -sL "${REPO_URL}/archive/refs/heads/main.zip" -o "${TEMP_DIR}/config.zip"
+unzip -q "${TEMP_DIR}/config.zip" -d "$TEMP_DIR"
 
-# Check if cloning was successful
-if [ $? -ne 0 ]; then
-  echo "Failed to clone the repository. Please check your internet connection and try again."
-  exit 1
+# Check for conflicts
+CONFLICTS=()
+for FILE in "$TEMP_DIR/${CONFIG_DIR}-main/"*; do
+  FILENAME=$(basename "$FILE")
+  if [ -e "$TARGET_DIR/$FILENAME" ]; then
+    CONFLICTS+=("$FILENAME")
+  fi
+done
+
+# Handle conflicts
+if [ ${#CONFLICTS[@]} -ne 0 ]; then
+  echo "Warning: The following files already exist and will be overwritten:"
+  printf '%s\n' "${CONFLICTS[@]}"
+  read -p "Do you want to continue and overwrite these files? (y/n): " CHOICE
+  if [[ ! "$CHOICE" =~ ^[Yy]$ ]]; then
+    echo "Aborting installation of configuration files."
+    rm -rf "$TEMP_DIR"
+    exit 1
+  fi
 fi
 
 # Copy the contents of config_files to the home directory
 echo "Copying configuration files to the home directory..."
-cp -r "$TEMP_DIR/config_files/." "$TARGET_DIR"
+cp -r "$TEMP_DIR/${CONFIG_DIR}-main/"* "$TARGET_DIR/"
 
 # Clean up by removing the temporary directory
 rm -rf "$TEMP_DIR"
