@@ -11,4 +11,8 @@ bash <(curl -s $BASE_URL/install_brewfile.sh)
 echo "Applying macOS system settings..."
 bash <(curl -s $BASE_URL/system_settings.sh)
 
+# Run install_config_files.sh
+echo "Installing configuration files to the home directory..."
+bash <(curl -s $BASE_URL/install_config_files.sh)
+
 echo "All setup tasks completed successfully!"

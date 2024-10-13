@@ -4,11 +4,13 @@ These scripts will automatically install applications via Homebrew, and also set
 
 ## Complete macOS Setup
 
-To install all Brewfile packages and apply macOS system settings in one step, run the following command:
+To install all Brewfile packages, apply macOS system settings, and copy configuration files to your home directory, run the following command:
 
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/aagedal/aagedal_macos_config/main/setup_all.sh)
 ```
+
+The brewfile and system settings can also be installed separately below.
 
 ## Installing Brewfile
 
@@ -33,15 +35,23 @@ This script configures a variety of macOS settings for macOS Sonoma (14.0) and n
 - Saving screenshots as JPEG files to a "Screenshots" folder on the Desktop.
 - Disabling the Spotlight search keyboard shortcut.
 
-## Requirements
+### Requirements
 
 - macOS Sonoma (14.0) or newer
 - Apple Silicon Mac
 
-## Usage
+### Usage
 
 To run the script, paste the following command into your terminal:
 
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/aagedal/aagedal_macos_config/main/system_settings.sh)
+```
+
+## Installing Configuration Files
+
+To clone the repository and install all configuration files from the `config_files` directory to your home directory, run:
+
+```bash
+bash <(curl -s https://raw.githubusercontent.com/aagedal/aagedal_macos_config/main/install_config_files.sh)
 ```
