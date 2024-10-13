@@ -45,6 +45,9 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 15
 # Show status bar in Finder
 defaults write com.apple.finder ShowStatusBar -bool true
 
+# Make list view default in Finder
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+
 # Auto-hide the Dock
 defaults write com.apple.dock autohide -bool true
 
