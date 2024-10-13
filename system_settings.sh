@@ -70,6 +70,8 @@ defaults write com.apple.dock expose-animation-duration -float 0.1
 
 # Group windows by application in Mission Control for better overview when running Aerospace
 defaults write com.apple.dock expose-group-by-app -bool true
+#Drag windows by ctrl + cmd for aerospace compatibilty
+#defaults write -g NSWindowShouldDragOnGesture -bool true
 
 # Apply settings
 log "Applying changes..."
