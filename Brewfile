@@ -9,7 +9,7 @@ tap "nikitabobko/tap/aerospace" # Needed for aerospace, yabai and skhd replaceme
 
 # Command Line Apps
 brew "git" # Working with code and GitHub
-brew "zsh"
+brew "zsh" # Just to be sure. Probably OS native.
 brew "ffmpeg" # Convert almost all video formats in existence.
 brew "exiftool" # Read or write ALL metadata from image files.
 brew "wget" # Quickly download a file without a web browser
