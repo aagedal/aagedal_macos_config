@@ -24,6 +24,7 @@ alias gs='git status'
 alias gp='git push'
 alias gl='git pull'
 alias c='clear'
+alias brewup='brew update && brew upgrade'
 
 # Environment Variables
 export EDITOR='nano'
