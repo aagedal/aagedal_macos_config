@@ -68,6 +68,9 @@ defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 "<dic
 log "Speeding up Mission Control animations..."
 defaults write com.apple.dock expose-animation-duration -float 0.1
 
+# Group windows by application in Mission Control for better overview when running Aerospace
+defaults write com.apple.dock expose-group-by-app -bool true
+
 # Apply settings
 log "Applying changes..."
 killall Finder
