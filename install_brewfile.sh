@@ -28,11 +28,28 @@ else
   log "Homebrew is already installed. Proceeding with Brewfile installation."
 fi
 
-# Install Brewfile
+# Download the Brewfile to a temporary location
+TEMP_BREWFILE=$(mktemp)
+Brewfile_URL="https://raw.githubusercontent.com/aagedal/aagedal_macos_config/main/Brewfile"
+
+log "Downloading Brewfile from $Brewfile_URL..."
+if curl -fsSL "$Brewfile_URL" -o "$TEMP_BREWFILE"; then
+  log "Brewfile downloaded successfully to $TEMP_BREWFILE."
+else
+  log "Failed to download Brewfile from $Brewfile_URL. Please check the URL and your internet connection."
+  exit 1
+fi
+
+# Install Brewfile packages
 log "Installing packages from the Brewfile..."
-if brew bundle --file=https://raw.githubusercontent.com/aagedal/aagedal_macos_config/main/Brewfile >> "$LOG_FILE" 2>&1; then
+if brew bundle --file="$TEMP_BREWFILE" >> "$LOG_FILE" 2>&1; then
   log "Brewfile installed successfully!"
 else
   log "There were issues installing some packages. Please check the Brewfile for errors and review the log at $LOG_FILE."
+  rm -f "$TEMP_BREWFILE"
   exit 1
 fi
+
+# Clean up the temporary Brewfile
+rm -f "$TEMP_BREWFILE"
+log "Temporary Brewfile removed."
