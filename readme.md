@@ -1,34 +1,47 @@
-# macOS Setup Script
+# Aagedal setup scripts
 
-Automate the setup of your Apple Silicon macOS environment by installing Homebrew, necessary packages, configuring system settings, and applying your preferred configurations.
+These scripts will automatically install applications via Homebrew, and also setup system settings.
 
-## Features
+## Complete macOS Setup
 
-- **Homebrew Installation**: Automatically installs Homebrew if it's not already installed and updates it if it is.
-- **Brewfile Management**: Installs all packages, casks, and applications listed in the `Brewfile`.
-- **System Configuration**: Applies various macOS system settings using `defaults` commands.
-- **Oh My Zsh Installation**: Installs Oh My Zsh along with custom configurations, plugins, and themes.
-- **Configuration Files**: Copies configuration files to the appropriate directories, backing up existing ones to prevent data loss.
-
-## Repository Structure
-├── Brewfile
-├── config_files
-│   ├── .config
-│   │   └── … (your config files)
-│   ├── .zshrc
-│   ├── file1
-│   └── file2
-├── setup.sh
-└── README.md
-
-- **Brewfile**: Lists all Homebrew packages and casks to be installed.
-- **config_files/**: Contains configuration files to be copied to `~/.config` and your home directory, including `.zshrc`.
-- **setup.sh**: The main setup script that orchestrates the installation and configuration process.
-- **README.md**: This documentation file.
-
-## Quick Install
-
-Run the following single command in your Terminal to execute the setup script directly from the repository:
+To install all Brewfile packages and apply macOS system settings in one step, run the following command:
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/aagedal/Aagedal_macOS_config/main/setup.sh)"
+bash <(curl -s https://raw.githubusercontent.com/aagedal/aagedal_macos_config/main/setup_all.sh)
+```
+
+## Installing Brewfile
+
+To install all packages listed in the Brewfile, run the following command:
+
+```bash
+bash <(curl -s https://raw.githubusercontent.com/aagedal/aagedal_macos_config/main/install_brewfile.sh)
+```
+
+This should also install Homebrew if it isn't installed.
+
+## macOS System Settings Script
+
+This script configures a variety of macOS settings for macOS Sonoma (14.0) and newer on Apple Silicon Macs. The settings currently include:
+
+- Always displaying file extensions.
+- Enabling three-finger drag and tap-to-click for the trackpad.
+- Increasing the keyboard key repeat rate.
+- Showing the status bar in Finder.
+- Setting the Dock to auto-hide and minimizing windows into the application icon.
+- Enabling Dark Mode.
+- Saving screenshots as JPEG files to a "Screenshots" folder on the Desktop.
+- Disabling the Spotlight search keyboard shortcut.
+
+## Requirements
+
+- macOS Sonoma (14.0) or newer
+- Apple Silicon Mac
+
+## Usage
+
+To run the script, paste the following command into your terminal:
+
+```bash
+bash <(curl -s https://raw.githubusercontent.com/aagedal/aagedal_macos_config/main/system_settings.sh)
+```

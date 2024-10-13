@@ -3,8 +3,9 @@
 # Activate Homebrew Cask Repositories
 tap "homebrew/cask" # Enabling installation of GUI apps with Homebrew.
 tap "homebrew/bundle" # Needed for automated reinstall with MAS
-tap "koekeishiya/formulae" # Needed for Yabai and skhd
+# tap "koekeishiya/formulae" # Needed for Yabai and skhd
 tap "romkatv/powerlevel10k" # Terminal theme repo
+tap "nikitabobko/tap/aerospace" # Needed for aerospace, yabai and skhd replacement.
 
 # Command Line Apps
 brew "git" # Working with code and GitHub
@@ -51,6 +52,9 @@ cask "adobe-dng-converter" # Tool to convert RAW files to DNG
 cask "shottr" # Screenshotting tool – Licence in 1Password
 cask "stats" # Menu bar activity monitor
 cask "wezterm" # Better terminal than default. More private than Warp
+cask "warp" # Better terminal with text edit terminal commands, but slightly less private than wezterm.
+cask "adobe-creative-cloud" #Adobe app manager for installing Photoshop, Premiere Pro, Bridge and Lightrooom.
+cask "aerospace" # Better yabai, doesn't require skhd.
 
 
 # Mac App Store Apps
@@ -69,7 +73,7 @@ mas "Mountain Duck", id: 1024974133 # Mount FTP servers as local drives.
 mas "Numbers", id: 409203825 # Excel alternative with iCloud sync.
 mas "Pages", id: 409201541 # Word alternative.
 mas "PopClip", id: 445189367 # Smart popup commands with text selection.
-mas "Ulysses", id: 1225570693 # Minimalist writing tool for novels.
+mas "Ulysses", id: 1225570693 # Minimalist writing tool for novels. Require subscription for writing, but not reading.
 mas "Messenger", id: 1480068668 # Facebook messenger app.
 mas "Microsoft Teams", id: 1091189122 # Video meetings.
 mas "Microsoft Word", id: 462054704 # Writing app.
