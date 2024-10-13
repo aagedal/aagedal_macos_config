@@ -1,11 +1,10 @@
 # Aagedals default apps
 
 # Activate Homebrew Cask Repositories
-tap "homebrew/cask" # Enabling installation of GUI apps with Homebrew.
 tap "homebrew/bundle" # Needed for automated reinstall with MAS
 # tap "koekeishiya/formulae" # Needed for Yabai and skhd
-tap "romkatv/powerlevel10k" # Terminal theme repo
-tap "nikitabobko/tap/aerospace" # Needed for aerospace, yabai and skhd replacement.
+#tap "romkatv/powerlevel10k" # Terminal theme repo. Probably not needed.
+
 
 # Command Line Apps
 brew "git" # Working with code and GitHub
@@ -14,11 +13,11 @@ brew "ffmpeg" # Convert almost all video formats in existence.
 brew "exiftool" # Read or write ALL metadata from image files.
 brew "wget" # Quickly download a file without a web browser
 brew "eza" # Better ls
-brew "oxide" # Better cd
+brew "zoxide" # Better cd
 brew "tmux" # Terminal management
 brew "yt-dlp" # Download all web videos
-brew "koekeishiya/formulae/skhd" # Works in tandem with yabai below. Creating system wide keyboard shortcuts with CLI programs.
-brew "koekeishiya/formulae/yabai" # Tiled Window manager for macOS. Automatically tile windows.
+#brew "koekeishiya/formulae/skhd" # Works in tandem with yabai below. Creating system wide keyboard shortcuts with CLI programs.
+#brew "koekeishiya/formulae/yabai" # Tiled Window manager for macOS. Automatically tile windows.
 brew "mas" # Application to install apps from the App Store using CLI
 brew "btop" # Better terminal activity monitor
 brew "ranger" # Terminal file manager
@@ -27,6 +26,7 @@ brew "lsd" # Better ls command. With icons.
 brew "zsh-syntax-highlighting" # Terminal syntax highlight
 brew "zsh-autosuggestions" # Terminal auto complete
 brew "powerlevel10k" # Terminal theme
+brew "nikitabobko/tap/areospace" # Aerospace, yabai and skhd replacement.
 
 # Install fonts for powerlevel10k (optional)
 cask "font-hack-nerd-font" # Example font
