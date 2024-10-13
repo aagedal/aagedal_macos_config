@@ -40,9 +40,9 @@ else
   exit 1
 fi
 
-# Install Brewfile packages
-log "Installing packages from the Brewfile..."
-if brew bundle --file="$TEMP_BREWFILE" >> "$LOG_FILE" 2>&1; then
+# Install Brewfile packages with verbose output
+log "Installing packages from the Brewfile with verbose output..."
+if brew bundle --file="$TEMP_BREWFILE" --verbose 2>&1 | tee -a "$LOG_FILE"; then
   log "Brewfile installed successfully!"
 else
   log "There were issues installing some packages. Please check the Brewfile for errors and review the log at $LOG_FILE."
