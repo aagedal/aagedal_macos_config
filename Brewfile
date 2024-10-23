@@ -55,6 +55,7 @@ cask "wezterm" # Better terminal than default. More private than Warp
 cask "warp" # Better terminal with text edit terminal commands, but slightly less private than wezterm.
 cask "adobe-creative-cloud" #Adobe app manager for installing Photoshop, Premiere Pro, Bridge and Lightrooom.
 cask "aerospace" # Better yabai, doesn't require skhd.
+cask "keycastr" # Tool to display button presses. Useful for screen recordings.
 
 
 # Mac App Store Apps
