@@ -36,7 +36,6 @@ cask "1password" # The best password manager. Require a subscription.
 cask "arc" # Modern web browser with minimal UI.
 cask "chatgpt" # AI chat application with access to the latest and best models.
 cask "discord" # Gaming chat, Bellingcat, and app support channels
-cask "hyperkey" # Make Caps Lock useful by turning it into a one-button ctrl+shift+option+command, which allows for more and easier keyboard shortcuts.
 cask "keka" # App to uncompress and compress files. Unlike macOS native it also supports RAR.
 cask "shutter-encoder" # Free media conversion app with web video download
 cask "iina" # Video player based on mpv, but optimized for macOS. Supports as many formats as VLC, but looks better.
@@ -56,6 +55,8 @@ cask "warp" # Better terminal with text edit terminal commands, but slightly les
 cask "adobe-creative-cloud" #Adobe app manager for installing Photoshop, Premiere Pro, Bridge and Lightrooom.
 cask "aerospace" # Better yabai, doesn't require skhd.
 cask "keycastr" # Tool to display button presses. Useful for screen recordings.
+cask "karabiner-elements" # Replaces Hyperkey because Hyperkey was unreliable at startup.
+cask "betterdisplay" # More control of HDMI monitors.
 
 
 # Mac App Store Apps
