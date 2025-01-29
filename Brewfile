@@ -82,6 +82,7 @@ mas "Microsoft Word", id: 462054704 # Writing app.
 mas "Microsoft Excel", id: 462058435 # Spreadcheat app.
 mas "Microsoft PowerPoint", id: 462062816 # Presentations.
 mas "Microsoft Outlook", id: 985367838 # Mail and meeting calendar.
+mas "DaisyDisk", id: 411643860 # Disk space analyzer
 
 
 
