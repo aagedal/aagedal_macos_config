@@ -1,2 +1,5 @@
--f "bestvideo+bestaudio" --recode-video mp4 --embed-metadata --restrict-filenames --cookies-from-browser chrome --progress -o
-'~/Downloads/yt-dlp/%(title)s-%(id)s.%(ext)s'
+-f "bestvideo+bestaudio"
+--embed-metadata
+--restrict-filenames
+-o '~/Downloads/yt-dlp/%(title)s-%(id)s.%(ext)s'
+--exec "bash -c 'FILE=\"{}\"; DIR=$(dirname \"$FILE\"); BASE=$(basename \"$FILE\" | sed \"s/\.[^.]*$//\"); ffmpeg -i \"$FILE\" -map 0 -c copy \"$DIR/$BASE.mp4\" -map 0 -c:v libx264 -c:a aac \"$DIR/$BASE_backup.mp4\"'"
