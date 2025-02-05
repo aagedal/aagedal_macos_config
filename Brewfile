@@ -55,8 +55,7 @@ cask "warp" # Better terminal with text edit terminal commands, but slightly les
 cask "adobe-creative-cloud" #Adobe app manager for installing Photoshop, Premiere Pro, Bridge and Lightrooom.
 cask "aerospace" # Better yabai, doesn't require skhd.
 cask "keycastr" # Tool to display button presses. Useful for screen recordings.
-cask "karabiner-elements" # Replaces Hyperkey because Hyperkey was unreliable at startup.
-cask "betterdisplay" # More control of HDMI monitors.
+cask "betterdisplay" # More control of HDMI monitors. Able to setup a virtual monitor for clean OBS recording.
 
 
 # Mac App Store Apps
