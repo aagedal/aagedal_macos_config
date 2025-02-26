@@ -27,6 +27,7 @@ brew "zsh-syntax-highlighting" # Terminal syntax highlight
 brew "zsh-autosuggestions" # Terminal auto complete
 brew "powerlevel10k" # Terminal theme
 brew "nikitabobko/tap/areospace" # Aerospace, yabai and skhd replacement.
+brew "imagemagick" # CLI tool for image conversion.
 
 # Install fonts for powerlevel10k (optional)
 cask "font-hack-nerd-font" # Example font
