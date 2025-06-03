@@ -14,10 +14,7 @@ brew "exiftool" # Read or write ALL metadata from image files.
 brew "wget" # Quickly download a file without a web browser
 brew "eza" # Better ls
 brew "zoxide" # Better cd
-brew "tmux" # Terminal management
 brew "yt-dlp" # Download all web videos
-#brew "koekeishiya/formulae/skhd" # Works in tandem with yabai below. Creating system wide keyboard shortcuts with CLI programs.
-#brew "koekeishiya/formulae/yabai" # Tiled Window manager for macOS. Automatically tile windows.
 brew "mas" # Application to install apps from the App Store using CLI
 brew "btop" # Better terminal activity monitor
 brew "ranger" # Terminal file manager
@@ -42,20 +39,18 @@ cask "shutter-encoder" # Free media conversion app with web video download
 cask "iina" # Video player based on mpv, but optimized for macOS. Supports as many formats as VLC, but looks better.
 cask "obs" # Screenrecording tool with audio meters and custom PiP
 cask "raycast" # Fast app launching, clipboard history, window management, AI quick-fixes
+cask "ollama" # Local LLM server. Works with Raycast.
 cask "slack" # Business communication
-cask "visual-studio-code" # Fast free code editor
-cask "zed" # Programming application like VSCode, but written in Rust.
-cask "msty" # Local and cloud LMM GUI
+cask "cursor" # Code editor with integrated AI.
 cask "xcode" # Swift UI programming
-cask "docker" # Run Docker-images. Label Studio for example.
+#cask "docker" # Run Docker-images.
 cask "adobe-dng-converter" # Tool to convert RAW files to DNG
 cask "shottr" # Screenshotting tool – Licence in 1Password
-cask "stats" # Menu bar activity monitor
-cask "wezterm" # Better terminal than default. More private than Warp
+#cask "stats" # Menu bar activity monitor
 cask "warp" # Better terminal with text edit terminal commands, but slightly less private than wezterm.
 cask "adobe-creative-cloud" #Adobe app manager for installing Photoshop, Premiere Pro, Bridge and Lightrooom.
-cask "aerospace" # Better yabai, doesn't require skhd.
-cask "keycastr" # Tool to display button presses. Useful for screen recordings.
+#cask "aerospace" # Window manager.
+#cask "keycastr" # Tool to display button presses. Useful for screen recordings.
 cask "betterdisplay" # More control of HDMI monitors. Able to setup a virtual monitor for clean OBS recording.
 
 
@@ -71,10 +66,10 @@ mas "Infuse", id: 1136220934 # Movie player connected to NAS with iCloud sync
 mas "Keynote", id: 409183694 # Presentation utility
 mas "Logic Pro", id: 634148309 # Advanced music making program
 mas "MediaInfo", id: 510620098 # Check metadata of all image files. Pro licence can be restored.
-mas "Mountain Duck", id: 1024974133 # Mount FTP servers as local drives.
+# mas "Mountain Duck", id: 1024974133 # Mount FTP servers as local drives.
 mas "Numbers", id: 409203825 # Excel alternative with iCloud sync.
 mas "Pages", id: 409201541 # Word alternative.
-mas "PopClip", id: 445189367 # Smart popup commands with text selection.
+# mas "PopClip", id: 445189367 # Smart popup commands with text selection.
 mas "Ulysses", id: 1225570693 # Minimalist writing tool for novels. Require subscription for writing, but not reading.
 mas "Messenger", id: 1480068668 # Facebook messenger app.
 mas "Microsoft Teams", id: 1091189122 # Video meetings.
