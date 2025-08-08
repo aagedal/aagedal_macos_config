@@ -1,4 +1,5 @@
 -f "bestvideo+bestaudio"
+--ffmpeg-location "/opt/homebrew/bin/ffmpeg"
 --embed-metadata
 --restrict-filenames
 -o '~/Downloads/yt-dlp/%(title)s-%(id)s.%(ext)s'
