@@ -3,7 +3,7 @@
 # Activate Homebrew Cask Repositories
 tap "homebrew/bundle" # Needed for automated reinstall with MAS
 # tap "koekeishiya/formulae" # Needed for Yabai and skhd
-#tap "romkatv/powerlevel10k" # Terminal theme repo. Probably not needed.
+# tap "romkatv/powerlevel10k" # Terminal theme repo. Probably not needed.
 
 
 # Command Line Apps
