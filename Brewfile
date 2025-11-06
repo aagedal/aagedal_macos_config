@@ -23,7 +23,7 @@ brew "lsd" # Better ls command. With icons.
 brew "zsh-syntax-highlighting" # Terminal syntax highlight
 brew "zsh-autosuggestions" # Terminal auto complete
 brew "powerlevel10k" # Terminal theme
-brew "nikitabobko/tap/areospace" # Aerospace, yabai and skhd replacement.
+#brew "nikitabobko/tap/areospace" # Aerospace, yabai and skhd replacement.
 brew "imagemagick" # CLI tool for image conversion.
 
 # Install fonts for powerlevel10k (optional)
@@ -31,8 +31,9 @@ cask "font-hack-nerd-font" # Example font
 
 # GUI Apps
 cask "1password" # The best password manager. Require a subscription.
+cask "helium-browser" # Minimalist and private degoogled Chromium browser. (unfortunately no vertical tab bar)
 cask "arc" # Modern web browser with minimal UI.
-cask "chatgpt" # AI chat application with access to the latest and best models.
+cask "obsidian" # Free, scalable note-taking and writing application.
 cask "discord" # Gaming chat, Bellingcat, and app support channels
 cask "keka" # App to uncompress and compress files. Unlike macOS native it also supports RAR.
 cask "shutter-encoder" # Free media conversion app with web video download
@@ -41,23 +42,22 @@ cask "obs" # Screenrecording tool with audio meters and custom PiP
 cask "raycast" # Fast app launching, clipboard history, window management, AI quick-fixes
 cask "ollama" # Local LLM server. Works with Raycast.
 cask "slack" # Business communication
-cask "cursor" # Code editor with integrated AI.
+# cask "cursor" # Code editor with integrated AI.
+cask "zed" # Fast code editor with integrated AI.
 cask "xcode" # Swift UI programming
-#cask "docker" # Run Docker-images.
+# cask "docker-desktop" # Run Docker-images.
 cask "adobe-dng-converter" # Tool to convert RAW files to DNG
-cask "shottr" # Screenshotting tool – Licence in 1Password
-#cask "stats" # Menu bar activity monitor
+cask "shottr" # Screenshotting tool – Licence in 1Pw
+# cask "stats" # Menu bar activity monitor
 cask "warp" # Better terminal with text edit terminal commands, but slightly less private than wezterm.
 cask "adobe-creative-cloud" #Adobe app manager for installing Photoshop, Premiere Pro, Bridge and Lightrooom.
-#cask "aerospace" # Window manager.
-#cask "keycastr" # Tool to display button presses. Useful for screen recordings.
+# cask "aerospace" # Window manager.
+# cask "keycastr" # Tool to display button presses. Useful for screen recordings.
 cask "betterdisplay" # More control of HDMI monitors. Able to setup a virtual monitor for clean OBS recording.
+cask "affinity" # Free image editing software Affinity Studio. Alternative to Photoshop, but worse at RAW image editing.
 
 
 # Mac App Store Apps
-mas "Affinity Designer 2", id: 1616831348 # Like Adobe Illustrator without a subscription
-mas "Affinity Photo 2", id: 1616822987 # Like Adobe Photoshop without a subscription
-mas "Affinity Publisher 2", id: 1606941598 # Like Adobe InDesign without a subscription
 mas "Charmstone", id: 1563735522 # Smart shortcut when dragging files. Quickly move to common folders or open in common apps.
 mas "Elmedia Video Player", id: 1044549675 # Supports many file formats and chrome cast and airplay.
 mas "Final Cut Pro", id: 424389933 # Fast video editor
@@ -70,15 +70,13 @@ mas "MediaInfo", id: 510620098 # Check metadata of all image files. Pro licence 
 mas "Numbers", id: 409203825 # Excel alternative with iCloud sync.
 mas "Pages", id: 409201541 # Word alternative.
 # mas "PopClip", id: 445189367 # Smart popup commands with text selection.
-mas "Ulysses", id: 1225570693 # Minimalist writing tool for novels. Require subscription for writing, but not reading.
-mas "Messenger", id: 1480068668 # Facebook messenger app.
+# mas "Ulysses", id: 1225570693 # Minimalist writing tool for novels. Require subscription for writing, but not reading.
 mas "Microsoft Teams", id: 1091189122 # Video meetings.
 mas "Microsoft Word", id: 462054704 # Writing app.
 mas "Microsoft Excel", id: 462058435 # Spreadcheat app.
 mas "Microsoft PowerPoint", id: 462062816 # Presentations.
 mas "Microsoft Outlook", id: 985367838 # Mail and meeting calendar.
 mas "DaisyDisk", id: 411643860 # Disk space analyzer
-
 
 
 # Adobe Creative Cloud
