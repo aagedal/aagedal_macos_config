@@ -55,6 +55,7 @@ cask "adobe-creative-cloud" #Adobe app manager for installing Photoshop, Premier
 # cask "keycastr" # Tool to display button presses. Useful for screen recordings.
 cask "betterdisplay" # More control of HDMI monitors. Able to setup a virtual monitor for clean OBS recording.
 cask "affinity" # Free image editing software Affinity Studio. Alternative to Photoshop, but worse at RAW image editing.
+cask "blender" # Free open source 3D modelling and animation software.
 
 
 # Mac App Store Apps
