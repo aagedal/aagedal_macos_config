@@ -68,4 +68,30 @@ config.colors = {
 }
 
 -- and finally, return the configuration to wezterm
+config.keys = {
+  {key="Enter", mods="SHIFT", action=wezterm.action{SendString="\x1b\r"}},
+
+  -- Pane management
+  -- Split panes (similar to iTerm2)
+  {key="d", mods="CMD", action=wezterm.action.SplitHorizontal{domain="CurrentPaneDomain"}},
+  {key="d", mods="CMD|SHIFT", action=wezterm.action.SplitVertical{domain="CurrentPaneDomain"}},
+
+  -- Close current pane
+  {key="w", mods="CMD", action=wezterm.action.CloseCurrentPane{confirm=true}},
+
+  -- Navigate between panes with CMD+Arrow keys
+  {key="LeftArrow", mods="CMD", action=wezterm.action.ActivatePaneDirection("Left")},
+  {key="RightArrow", mods="CMD", action=wezterm.action.ActivatePaneDirection("Right")},
+  {key="UpArrow", mods="CMD", action=wezterm.action.ActivatePaneDirection("Up")},
+  {key="DownArrow", mods="CMD", action=wezterm.action.ActivatePaneDirection("Down")},
+
+  -- macOS-style word and line navigation with Option+Arrow
+  {key="LeftArrow", mods="OPT", action=wezterm.action{SendString="\x1bb"}},  -- Move backward one word
+  {key="RightArrow", mods="OPT", action=wezterm.action{SendString="\x1bf"}}, -- Move forward one word
+
+  -- CMD+Arrow for beginning/end of line (macOS style)
+  {key="LeftArrow", mods="CMD|SHIFT", action=wezterm.action{SendString="\x1bOH"}}, -- Start of line
+  {key="RightArrow", mods="CMD|SHIFT", action=wezterm.action{SendString="\x1bOF"}}, -- End of line
+}
+
 return config
