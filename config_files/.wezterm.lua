@@ -92,6 +92,9 @@ config.keys = {
   -- CMD+Arrow for beginning/end of line (macOS style)
   {key="LeftArrow", mods="CMD|SHIFT", action=wezterm.action{SendString="\x1bOH"}}, -- Start of line
   {key="RightArrow", mods="CMD|SHIFT", action=wezterm.action{SendString="\x1bOF"}}, -- End of line
+
+  -- Clear current terminal input line
+  {key="k", mods="CMD", action=wezterm.action{SendString="\x15"}}, -- Ctrl+U to clear line
 }
 
 return config
