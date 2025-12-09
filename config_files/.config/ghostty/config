@@ -1,0 +1,22 @@
+# This is the configuration file for Ghostty terminal emulator.
+
+#Style
+background-opacity = 0.67
+background-blur = true
+background = #001223
+window-colorspace = display-p3
+
+
+#Window Style
+macos-titlebar-style = tabs
+macos-window-buttons = hidden
+macos-titlebar-proxy-icon = hidden
+window-subtitle = false
+
+window-padding-x = 25, 25
+window-padding-y = 0, 20
+
+
+#Behaviour
+copy-on-select = clipboard
+
