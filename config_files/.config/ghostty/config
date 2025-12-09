@@ -12,6 +12,7 @@ macos-titlebar-style = tabs
 macos-window-buttons = hidden
 macos-titlebar-proxy-icon = hidden
 window-subtitle = false
+title = " "
 
 window-padding-x = 25, 25
 window-padding-y = 0, 20
