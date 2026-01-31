@@ -22,14 +22,15 @@ brew "zsh-autosuggestions" # Terminal auto complete
 
 
 # Media
-brew "ffmpeg" # Convert almost all video formats in existence.
+brew "ffmpeg-full" # Convert almost all video formats in existence.
 brew "exiftool" # Read or write ALL metadata from image files.
 brew "yt-dlp" # Download all web videos
-brew "imagemagick" # CLI tool for image conversion.
+brew "imagemagick-full" # CLI tool for image conversion.
 
 # Development
 brew "git" # Working with code and GitHub
-brew opencode # Very good terminal AI agent interface
+brew "opencode" # Very good terminal AI agent interface
+brew "claude-code" #The best AI terminal coding interface
 
 
 # Utilities
