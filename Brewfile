@@ -3,7 +3,7 @@
 
 ## Setup taps and cask —— Activate Homebrew Cask Repositories
 tap "homebrew/bundle" # Needed for automated reinstall with MAS
-tap "aagedal/casks" # Needed for Aagedal Media Converter
+tap "aagedal/tap" # Needed for Aagedal Media Converter
 
 # tap "koekeishiya/formulae" # Needed for Yabai and skhd
 # tap "romkatv/powerlevel10k" # Terminal theme repo. Probably not needed.
@@ -29,8 +29,7 @@ brew "imagemagick-full" # CLI tool for image conversion.
 
 # Development
 brew "git" # Working with code and GitHub
-brew "opencode" # Very good terminal AI agent interface
-brew "claude-code" #The best AI terminal coding interface
+brew "claude-code" # The best AI terminal coding interface
 
 
 # Utilities
@@ -62,8 +61,7 @@ cask "font-meslo-lg-nerd-font" # Necessary for Wezterm Setup
 
 # General necessities
 cask "1password" # The best password manager. Require a subscription.
-cask "helium-browser" # Minimalist and private degoogled Chromium browser. (unfortunately no vertical tab bar)
-cask "obsidian" # Free, scalable note-taking and writing application.
+cask "helium-browser" # Minimalist and private degoogled Chromium browser.
 cask "raycast" # Fast app launching, clipboard history, window management, AI quick-fixes
 
 
@@ -74,16 +72,14 @@ cask "blender" # Free open source 3D modelling and animation software.
 
 
 # Media tools
-cask "aagedal-media-converter"
-cask "shutter-encoder" # Free media conversion app with web video download
-cask "iina" # Video player based on mpv, but optimized for macOS. Supports as many formats as VLC, but looks better.
-cask "obs" # Screenrecording tool with audio meters and custom PiP
+cask "aagedal-media-converter" # Better Shutter Encoder
+cask "aagedal-media-player" # Better IINA
 cask "adobe-dng-converter" # Tool to convert RAW files to DNG
 
 
 # Development
 cask "claude-code" # Very good AI agent terminal interface.
-cask "wezterm" # Really fast terminal
+cask "ghostty" # Better Terminal
 cask "zed" # Fast and open source code editor with integrated AI.
 cask "xcode" # Swift UI programming
 cask "docker-desktop" # Run Docker-images.
@@ -97,17 +93,6 @@ cask "slack" # Business communication
 # Utilities
 cask "keka" # App to uncompress and compress files. Unlike macOS native it also supports RAR.
 cask "shottr" # Screenshotting tool – Licence in 1Pw
-cask "betterdisplay" # More control of HDMI monitors. Able to setup a virtual monitor for clean OBS recording.
-
-
-# Removed apps (may add again later)
-# cask "arc" # Modern web browser with minimal UI. Good, but UI is a bit sluggish.
-# cask "aerospace" # Window manager.
-# cask "keycastr" # Tool to display button presses. Useful for screen recordings.
-# cask "warp" # Better terminal with text edit terminal commands, but slightly less private than wezterm. Also slow to get ready.
-# cask "stats" # Menu bar activity monitor
-# cask "cursor" # Code editor with integrated AI.
-
 
 #—————————————————————————————————————————————————————————————
 
@@ -119,12 +104,10 @@ cask "betterdisplay" # More control of HDMI monitors. Able to setup a virtual mo
 
 
 # Creative
-mas "Final Cut Pro", id: 424389933 # Fast video editor
 mas "Logic Pro", id: 634148309 # Advanced music making program
 
 
 # Media
-mas "Elmedia Video Player", id: 1044549675 # Supports many file formats and chrome cast and airplay.
 mas "MediaInfo", id: 510620098 # Check metadata of all image files. Pro licence can be restored.
 
 
@@ -144,12 +127,6 @@ mas "Charmstone", id: 1563735522 # Smart shortcut when dragging files. Quickly m
 mas "Hidden Bar", id: 1452453066 # With all this cool apps the top right menu bar can become cluttered. This free app hides some of the clutter.
 mas "Infuse", id: 1136220934 # Movie player connected to NAS
 mas "DaisyDisk", id: 411643860 # Disk space analyzer
-
-
-# Removed apps (may add again later)
-# mas "Mountain Duck", id: 1024974133 # Mount FTP servers as local drives.
-# mas "PopClip", id: 445189367 # Smart popup commands with text selection.
-# mas "Ulysses", id: 1225570693 # Minimalist writing tool for novels. Require subscription for writing, but not reading.
 
 
 #—————————————————————————————————————————————————————————————
