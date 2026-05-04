@@ -2,7 +2,6 @@
 
 
 ## Setup taps and cask —— Activate Homebrew Cask Repositories
-tap "homebrew/bundle" # Needed for automated reinstall with MAS
 tap "aagedal/tap" # Needed for Aagedal Media Converter
 
 # tap "koekeishiya/formulae" # Needed for Yabai and skhd
